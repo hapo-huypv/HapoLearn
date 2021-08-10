@@ -1,20 +1,25 @@
+.header 
 .navbar {
-    height: 150px;
-    padding: 0px;
+  height: 150px;
+  padding: 0px;
 }
 
+.header
 .navbar-branch {
   margin-left: 130px;
 }
 
+.header
 .navbar-nav {
   margin-right: 130px;
 }
 
+.header
 .nav-item {
   margin-left: 15px;
 }
 
+.header
 .nav-link {
   border: none;
   font-weight: bold;
@@ -23,31 +28,37 @@
   border-radius: 17px;
 }
 
+.header
 .nav-link:hover {
   background-color: #B2D235;
   color: #FEFFFF !important;
 }
 
+.header
 .nav-link:active {
   background-color: #B2D235 !important;
   color: #FEFFFF !important;
 }
 
+.header
 .navbar-toggler-icon {
   cursor: pointer;
 }
 
 @media (max-width: 769px) and (min-width: 575px) {
+  .header
   .navbar-expand-md .container-fluid {
     flex-wrap: wrap !important;
   }
 
+  .header
   .navbar-branch {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  
+
+  .header
   .navbar-branch img {
     width: 300px;
     height: 61.74px;
@@ -55,27 +66,32 @@
 }
 
 @media (max-width: 415px) {
+  .header
   .navbar {
     height: 62px;
   }
 
+  .header
   .navbar-toggler {
     border: none;
     margin: 19px 21px;
     padding: 0px;
   }
 
+  .header
   .navbar-toggler-icon {
     width: 18px;
     height: 23px;
   }
 
+  .header
   .navbar-branch {
     margin-left: auto;
     margin-right: 112px;
     padding: 0px;
   }
 
+  .header
   .navbar-branch img {
     width: 150px;
     height: 26.75px;
@@ -88,4 +104,3 @@
   background-color: #505353;
   bottom: 0;  
 }
-
