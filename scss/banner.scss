@@ -1,4 +1,127 @@
-.carousel-caption {
-    text-align: left;
-    color: #11114e;
+.hapo-learn-banner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 655px;
+}
+
+.banner-background {
+  width: 100% !important;
+  height: 100%;
+  background-image: url(../assets/img/hapolearnbanner_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center center;
+}
+
+.custom-banner1 {
+  color: #11114E;
+  margin-left: 60px;
+  padding: 175px 0px;
+  font-family: UTM BryantLG;
+}
+
+.banner1-p1 {
+  font-style: Regular;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 61px;;
+  letter-spacing: -0.05em;
+  -webkit-text-fill: #11114E solid;
+}
+
+.banner1-p2 {
+  font-size: 50px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 61px;
+  -webkit-text-fill-color: #11114E;
+  -webkit-text-stroke: 2px;
+  letter-spacing: -0.05em;
+  margin-bottom: 10px;
+}
+
+.banner1-p2 img {
+  height: 43.9px;
+  width: 48.39px;
+  letter-spacing: -0.05em;
+}
+
+.banner1-p3 {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.05em;
+}
+
+.banner1-btn {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.05em;
+  padding: 13px 67px;
+  background-color: #B2D235;
+  border: 0.3px solid #FFFFF!important;
+  border-radius: 35px;
+  margin-top: 40px;
+}
+
+.banner1-btn:hover {
+  background-color: #B2D235;
+}
+
+.banner1-btn:active {
+  background-color: #B2D235;
+}
+
+@media (max-width: 769px) and (min-width: 575px) {
+  .hapo-learn-banner {
+    height: 350px;
+  }
+
+  .custom-banner1 {
+    margin-left: 28px;
+    padding-top: 55px;
+  }
+
+  .banner1-p1 {
+    font-size: 30px;
+    line-height: 36.78px;
+    font-weight: 400;
+  }
+
+  .banner1-p2 {
+    font-size: 30px;
+    line-height: 36.38px;
+  }
+  
+  .banner1-p2 img {
+    width: 34px;
+    height: 31px;
+  }
+  .banner1-p3 {
+    font-size: 16px;
+    line-height: 19.62px;
+    font-weight: 400;
+  }
+  
+  .banner1-btn {
+    font-size: 16px;
+    line-height: 19.65px;
+    padding: 8px 35px;
+    margin-top: 36px;
+  }
+}
+
+@media (max-width: 415px) {
+  .hapo-learn-banner {
+    height: 100%;
+  }
+
+  .banner-background {
+    height: 200px;
+  }
 }
