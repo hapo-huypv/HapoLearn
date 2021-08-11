@@ -15,7 +15,7 @@
 
 .custom-banner1 {
   height: 655px;
-  color: #11114E;
+  color: $color-black;
   margin-left: 60px;
   font-family: UTM BryantLG;
 }
@@ -26,7 +26,7 @@
   font-size: 50px;
   line-height: 61px;;
   letter-spacing: -0.05em;
-  -webkit-text-fill: #11114E solid;
+  -webkit-text-fill: $color-black solid;
 }
 
 .banner1-p2 {
@@ -34,7 +34,7 @@
   font-weight: 700;
   font-style: normal;
   line-height: 61px;
-  -webkit-text-fill-color: #11114E;
+  -webkit-text-fill-color: $color-black;
   -webkit-text-stroke: 2px;
   letter-spacing: -0.05em;
   margin-bottom: 10px;
@@ -55,25 +55,25 @@
 }
 
 .banner1-btn {
-  color: #FFFFFF;
+  color: $color-white;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 37px;
   letter-spacing: -0.05em;
   padding: 13px 67px;
-  background-color: #B2D235;
-  border: 0.3px solid #FFFFF!important;
+  background-color: $color-lightgreen;
+  border: 0.3px solid $color-white!important;
   border-radius: 35px;
   margin-top: 40px;
 }
 
 .banner1-btn:hover {
-  background-color: #B2D235;
+  background-color: $color-lightgreen;
 }
 
 .banner1-btn:active {
-  background-color: #B2D235;
+  background-color: $color-lightgreen;
 }
 
 @media (max-width: 769px) and (min-width: 575px) {
@@ -101,7 +101,7 @@
     width: 34px;
     height: 31px;
   }
-  
+
   .banner1-p3 {
     font-size: 16px;
     line-height: 19.62px;
