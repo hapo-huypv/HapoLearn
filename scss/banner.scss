@@ -5,22 +5,22 @@
 }
 
 .banner-background {
-  width: 100% !important;
-  height: 100%;
+  width: 100%;
+  height: 655px;
   background-image: url(../assets/img/hapolearnbanner_1.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position:center center;
 }
 
-.custom-banner1 {
+.custom-firstbanner {
   height: 655px;
   color: $color-black;
   margin-left: 60px;
   font-family: UTM BryantLG;
 }
 
-.banner1-p1 {
+.slogan-p-1 {
   font-style: Regular;
   font-weight: normal;
   font-size: 50px;
@@ -29,7 +29,7 @@
   -webkit-text-fill: $color-black solid;
 }
 
-.banner1-p2 {
+.slogan-p-2 {
   font-size: 50px;
   font-weight: 700;
   font-style: normal;
@@ -40,13 +40,13 @@
   margin-bottom: 10px;
 }
 
-.banner1-p2 img {
+.slogan-p-2 img {
   height: 43.9px;
   width: 48.39px;
   letter-spacing: -0.05em;
 }
 
-.banner1-p3 {
+.slogan-p-3 {
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -54,7 +54,7 @@
   letter-spacing: -0.05em;
 }
 
-.banner1-btn {
+.firstbanner-btn {
   color: $color-white;
   font-style: normal;
   font-weight: bold;
@@ -68,11 +68,11 @@
   margin-top: 40px;
 }
 
-.banner1-btn:hover {
+.firstbanner-btn:hover {
   background-color: $color-lightgreen;
 }
 
-.banner1-btn:active {
+.firstbanner-btn:active {
   background-color: $color-lightgreen;
 }
 
@@ -81,34 +81,34 @@
     height: 350px;
   }
 
-  .custom-banner1 {
+  .custom-firstbanner {
     margin-left: 28px;
     height: 350px;
   }
 
-  .banner1-p1 {
+  .slogan-p-1 {
     font-size: 30px;
     line-height: 36.78px;
     font-weight: 400;
   }
 
-  .banner1-p2 {
+  .slogan-p-2 {
     font-size: 30px;
     line-height: 36.38px;
   }
   
-  .banner1-p2 img {
+  .slogan-p-2 img {
     width: 34px;
     height: 31px;
   }
 
-  .banner1-p3 {
+  .slogan-p-3 {
     font-size: 16px;
     line-height: 19.62px;
     font-weight: 400;
   }
   
-  .banner1-btn {
+  .firstbanner-btn {
     font-size: 16px;
     line-height: 19.65px;
     padding: 8px 35px;
@@ -125,36 +125,36 @@
     height: 200px;
   }
 
-  .custom-banner1 {
+  .custom-firstbanner {
     padding-top: 298px;
     height: 200px;
     letter-spacing: 0em;
   }
 
-  .banner1-p1 {
+  .slogan-p-1 {
     font-size: 25px;
     line-height: 30.65px;
     font-weight: 400;
   }
 
-  .banner1-p2 {
+  .slogan-p-2 {
     font-size: 25px;
     line-height: 30.65px;
     -webkit-text-stroke: 1px;
   }
   
-  .banner1-p2 img {
+  .slogan-p-2 img {
     width: 25.16px;
     height: 22.83px;
   }
 
-  .banner1-p3 {
+  .slogan-p-3 {
     font-size: 16px;
     line-height: 19.62px;
     font-weight: 400;
   }
   
-  .banner1-btn {
+  .firstbanner-btn {
     font-size: 18px;
     line-height: 22.07px;
     padding: 12px 52px;
