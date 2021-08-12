@@ -1,0 +1,162 @@
+.hapo-learn-banner {
+  width: 100%;
+  height: 655px;
+}
+
+.banner-background {
+  width: 100%;
+  height: 655px;
+  background-image: url(../assets/img/hapolearnbanner_1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position:center center;
+}
+
+.custom-firstbanner {
+  height: 655px;
+  color: $color-black;
+  margin-left: 60px;
+  font-family: UTM BryantLG;
+}
+
+.slogan-title {
+  font-style: Regular;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 61px;;
+  letter-spacing: -0.05em;
+  -webkit-text-fill: $color-black solid;
+}
+
+.slogan-title-logo {
+  font-size: 50px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 61px;
+  -webkit-text-fill-color: $color-black;
+  -webkit-text-stroke: 2px;
+  letter-spacing: -0.05em;
+  margin-bottom: 10px;
+}
+
+.slogan-title-logo img {
+  height: 43.9px;
+  width: 48.39px;
+  letter-spacing: -0.05em;
+}
+
+.slogan-subtitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.05em;
+}
+
+.firstbanner-btn {
+  color: $color-white;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 37px;
+  letter-spacing: -0.05em;
+  padding: 13px 67px;
+  background-color: $color-lightgreen;
+  border: 0.3px solid $color-white!important;
+  border-radius: 35px;
+  margin-top: 40px;
+}
+
+.firstbanner-btn:hover {
+  background-color: $color-lightgreen;
+}
+
+.firstbanner-btn:active {
+  background-color: $color-lightgreen;
+}
+
+@media (max-width: 769px) and (min-width: 575px) {
+  .hapo-learn-banner {
+    height: 350px;
+  }
+
+  .custom-firstbanner {
+    margin-left: 28px;
+    height: 350px;
+  }
+
+  .slogan-title {
+    font-size: 30px;
+    line-height: 36.78px;
+    font-weight: 400;
+  }
+
+  .slogan-title-logo {
+    font-size: 30px;
+    line-height: 36.38px;
+  }
+  
+  .slogan-title-logo img {
+    width: 34px;
+    height: 31px;
+  }
+
+  .slogan-subtitle {
+    font-size: 16px;
+    line-height: 19.62px;
+    font-weight: 400;
+  }
+  
+  .firstbanner-btn {
+    font-size: 16px;
+    line-height: 19.65px;
+    padding: 8px 35px;
+    margin-top: 36px;
+  }
+}
+
+@media (max-width: 415px) {
+  .hapo-learn-banner {
+    height: 393px;
+  }
+
+  .banner-background {
+    height: 200px;
+  }
+
+  .custom-firstbanner {
+    padding-top: 298px;
+    height: 200px;
+    letter-spacing: 0em;
+  }
+
+  .slogan-title {
+    font-size: 25px;
+    line-height: 30.65px;
+    font-weight: 400;
+  }
+
+  .slogan-title-logo {
+    font-size: 25px;
+    line-height: 30.65px;
+    -webkit-text-stroke: 1px;
+  }
+  
+  .slogan-title-logo img {
+    width: 25.16px;
+    height: 22.83px;
+  }
+
+  .slogan-subtitle {
+    font-size: 16px;
+    line-height: 19.62px;
+    font-weight: 400;
+  }
+  
+  .firstbanner-btn {
+    font-size: 18px;
+    line-height: 22.07px;
+    padding: 12px 52px;
+    margin-top: 20px;
+  }
+}
