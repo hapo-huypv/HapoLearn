@@ -1,0 +1,45 @@
+.main-course {
+  margin-top: 50px;
+
+  .row {
+      margin-left: 10%;
+      margin-right: 10%;
+  }
+
+  .course-border {
+      background-color: $color-white;
+      border-radius: 15px;
+      box-shadow: 0px 0px 15px;
+  }
+
+  img {
+      display: block;
+      width: 100%;
+      height: 215px;
+      padding: 45px 72px;
+  }
+
+  .bg-color-php {
+      background-color: $color-bg-php;
+  }
+
+  .bg-color-htmlcssjs {
+      background-color: $color-bg-htmlcssjs;
+  }
+
+  .bg-color-java {
+      background-color: $color-bg-java;
+  }
+
+  .bg-color-rail {
+      background-color: $color-bg-rail;
+  }
+
+  .bg-color-laravel {
+      background-color: $color-bg-larabvel;
+  }
+  
+  .bg-color-css {
+      background-color: $color-bg-css;
+  }
+}
