@@ -1,11 +1,6 @@
 .course {
   margin-top: 50px;
 
-  .row {
-    margin-left: 10%;
-    margin-right: 10%;
-  }
-
   .course-border {
     background-color: $color-white;
     border-radius: 15px;
@@ -108,8 +103,7 @@
         overflow: hidden;
         text-overflow: ellipsis;
         line-height: 25px;
-        -webkit-line-clamp: 3;
-        height: 75px;
+        -webkit-line-clamp: 4;
         display: -webkit-box;
         -webkit-box-orient: vertical;
       }
