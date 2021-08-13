@@ -9,16 +9,6 @@
       margin-left: 7%;
       margin-right: 7%;
     }
-    // .navbar-toggler {
-    //   border: none;
-    //   margin: 19px 21px;
-    //   padding: 0px;
-    // }
-
-    // .navbar-toggler-icon {
-    //   width: 18px;
-    //   height: 23px;
-    // }
   }
 
   .navbar-light .navbar-nav .nav-link {
@@ -54,7 +44,6 @@
 
 @media (max-width: 769px) and (min-width: 575px) {
   .header {
-
     .navbar-expand-md .container-fluid {
       flex-wrap: wrap !important;
     }
@@ -74,7 +63,6 @@
 
 @media (max-width: 575px) {
   .header {
-
     .navbar {
       height: 62px;
     }
