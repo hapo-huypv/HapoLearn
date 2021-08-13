@@ -10,7 +10,7 @@
   background-image: url(../assets/img/hapolearnbanner_1.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position:center center;
+  background-position: center center;
 }
 
 .bg-linear {
@@ -22,7 +22,7 @@
   height: 655px;
   color: $color-black;
   margin-left: 60px;
-  font-family: UTM BryantLG;
+  font-family: $font_UTM_BryantLG;
 }
 
 .slogan {
@@ -115,7 +115,7 @@
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 575px) {
   .hapo-learn-banner {
     height: 393px;
   }
