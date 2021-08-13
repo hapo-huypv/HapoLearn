@@ -1,5 +1,4 @@
 .hapo-learn-banner {
-  position: relative;
   width: 100%;
   height: 655px;
   overflow: visible;
@@ -26,19 +25,16 @@
   font-family: UTM BryantLG;
 }
 
-.slogan-p-1 {
-  font-style: Regular;
-  font-weight: normal;
+.slogan {
   font-size: 50px;
   line-height: 61px;;
   letter-spacing: -0.05em;
   -webkit-text-fill: $color-black solid;
 }
 
-.slogan-p-2 {
+.main-title {
   font-size: 50px;
   font-weight: 700;
-  font-style: normal;
   line-height: 61px;
   -webkit-text-fill-color: $color-black;
   -webkit-text-stroke: 2px;
@@ -46,15 +42,13 @@
   margin-bottom: 10px;
 }
 
-.slogan-p-2 img {
+.main-title img {
   height: 43.9px;
   width: 48.39px;
   letter-spacing: -0.05em;
 }
 
-.slogan-p-3 {
-  font-style: normal;
-  font-weight: normal;
+.sub-title {
   font-size: 20px;
   line-height: 25px;
   letter-spacing: -0.05em;
@@ -62,7 +56,6 @@
 
 .firstbanner-btn {
   color: $color-white;
-  font-style: normal;
   font-weight: bold;
   font-size: 30px;
   line-height: 37px;
@@ -92,23 +85,23 @@
     height: 350px;
   }
 
-  .slogan-p-1 {
+  .slogan {
     font-size: 30px;
     line-height: 36.78px;
     font-weight: 400;
   }
 
-  .slogan-p-2 {
+  .main-title {
     font-size: 30px;
     line-height: 36.38px;
   }
   
-  .slogan-p-2 img {
+  .main-title img {
     width: 34px;
     height: 31px;
   }
 
-  .slogan-p-3 {
+  .sub-title {
     font-size: 16px;
     line-height: 19.62px;
     font-weight: 400;
@@ -137,24 +130,24 @@
     letter-spacing: 0em;
   }
 
-  .slogan-p-1 {
+  .slogan {
     font-size: 25px;
     line-height: 30.65px;
     font-weight: 400;
   }
 
-  .slogan-p-2 {
+  .main-title {
     font-size: 25px;
     line-height: 30.65px;
     -webkit-text-stroke: 1px;
   }
   
-  .slogan-p-2 img {
+  .main-title img {
     width: 25.16px;
     height: 22.83px;
   }
 
-  .slogan-p-3 {
+  .sub-title {
     font-size: 16px;
     line-height: 19.62px;
     font-weight: 400;
