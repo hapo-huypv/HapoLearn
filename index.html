@@ -13,19 +13,19 @@
 <body>
     <!--Header-->
     <header id="header" class="header">
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-            <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top justify-content-center">
+            <div class="container-fluid custom-header">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" 
                     data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <a class="header-logo navbar-branch" href="#">
+                <a class="navbar-branch" href="#">
                     <img src="./assets/img/hapolearn.png" alt="HapoLearn">        
                 </a>
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav ml-auto">
+                <div class="collapse navbar-collapse align-items-center  justify-content-end" id="navbarResponsive">
+                    <ul class="navbar-nav  align-items-center">
                         <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">ALL COURSE</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">ALL COURSES</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">LOGIN/REGISTER</a></li>
                         <li class="nav-item"><a class="nav-link" href="#">PROFILE</a></li>
                     </ul>
@@ -34,34 +34,120 @@
         </nav>
     </header>
     <!--Body-->
-    <div class="body">
+    <div class="container-fluid position-relative body p-0">
         <!--Banner-->
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="assets/img/hapolearnbanner_1.png" alt="First slide">
-                    <div class="carousel-caption custom-banner1 d-none d-md-block">
-                        <div>Learn Anytime, Anywhere</div>
-                        <div>at HapoLearn</div>
-                        <div>Interactive lessons, "on-the-go"</div>
-                        <div>practice, peer support</div>
-                        <button class="btn btn-primary" type="submit">Start Learning Now!</button>
+        <div class="hapo-learn-banner">
+            <div class="banner-background">
+                <div class="d-flex flex-column justify-content-center align-items-start custom-firstbanner">
+                    <div class="slogan">Learn Anytime, Anywhere</div>
+                    <div class="main-title">at HapoLearn 
+                        <img src="../assets/img/hapo_logo.png" alt="hapo_logo"> !
+                    </div>
+                    <div class="sub-title">Interactive lessons, "on-the-go" <br>practice, peer support</div>
+                    <button class="btn btn-primary firstbanner-btn btn-sm" type="submit">Start Learning Now!</button>
+                </div>
+            </div>
+            <div class="bg-linear"></div>
+        </div>
+        <!-- Main Course -->
+        <div class="container justify-content-center course">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card course-border">
+                        <div class="d-flex align-items-center justify-content-center card-img-top bg-color-htmlcssjs">
+                            <img class="" src="./assets/img/rectangle_7.png" alt="HTML/CSS/js Tutorial">
+                        </div>                          
+                        <div class="card-body">
+                            <h5 class="card-title">HTML/CSS/js Tutorial</h5>
+                            <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                            <a href="#" class="btn btn-primary">Take This Course</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card course-border">
+                        <div class="d-flex justify-content-center align-items-center card-img-top bg-color-laravel">
+                            <img class="" src="./assets/img/laravel_1_logo_black_and_white_1.png" alt="LARAVEL Tutorial">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">LARAVEL Tutorial</h5>
+                            <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                            <a href="#" class="btn btn-primary">Take This Course</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card course-border">
+                        <div class="d-flex justify-content-center align-items-center card-img-top bg-color-php">
+                            <img class="" src="./assets/img/rectangle_15.png" alt="PHP Tutorial">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">PHP Tutorial</h5>
+                            <p class="card-text">I knew hardly anything about HTML, JS, and CSS before entering New Media. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                            <a href="#" class="btn btn-primary">Take This Course</a>
+                        </div>
                     </div>
                 </div>
             </div>
-          </div>
+        </div>
+        <!-- Other Courses -->
+        <div class=" row other-course justify-content-center">
+            <span class="custom-underline-textcourse">Other courses</span>
+        </div>
+        <div class="container justify-content-center course">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="card course-border">
+                        <div class="d-flex justify-content-center align-items-center card-img-top bg-color-css">
+                            <img class="" src="./assets/img/css_course.png" alt="CSS Tutorial">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">CSS Tutorial</h5>
+                            <p class="card-text card-text-overflow">I knew hardly anything about HTML, JS, and CSS before entering New Media<br>. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                            <a href="#" class="btn btn-primary">Take This Course</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card course-border">
+                        <div class="d-flex justify-content-center align-items-center card-img-top bg-color-rail">
+                            <img class="" src="./assets/img/rails_course.png" alt="Rail Tutorial">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Ruby on rails Tutorial</h5>
+                            <p class="card-text card-text-overflow">I knew hardly anything about HTML, JS, and CSS before entering New Media<br>. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                            <a href="#" class="btn btn-primary">Take This Course</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="card course-border">
+                        <div class="d-flex justify-content-center align-items-center card-img-top bg-color-java">
+                            <img class="" src="./assets/img/java_1.png" alt="Java Tutorial">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Java Tutorial</h5>
+                            <p class="card-text card-text-overflow">I knew hardly anything about HTML, JS, and CSS before entering New Media<br>. I had coded quite a bit, but never touched anything in regards to web development.</p>
+                            <a href="#" class="btn btn-primary">Take This Course</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class=" row extend-course justify-content-center">
+            <span>View All Our Courses <img src="./assets/img/right_arrow.png" alt="arrow"></span>
+        </div>
+        </div>
     </div>
     <!--Footer-->
-    <footer class="footer">Footer
-    </footer>
+     <footer class="footer">Footer</footer>
 <section>
-    <script src="js/js.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
 </section>
 </body>
 </html>
-
