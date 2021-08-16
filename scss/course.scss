@@ -9,11 +9,14 @@
   .card-img-top {
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    display: block;
     width: 100%;
-    height: auto;
-    padding: 13% 21%;
+    height: 215px;
     box-shadow: 0px 2px 2px 0px $color-btn-boxshadow-black inset;
+
+    img {
+      display: block;
+      width: 60%;
+    }
   }
   
   .card-body {
@@ -116,6 +119,10 @@
 
 @media (max-width: 1140px) and (min-width: 576px) {
   .course {
+    .card-img-top {
+      height: 131px;
+    }
+
     .card-body {
       .card-title {
         font-size: 20px;
@@ -141,6 +148,10 @@
 @media (max-width: 575px) {
   .course {
     padding: 0px 12%;
+    
+    .card-img-top {
+      height: 163px;
+    }
 
     .course-border {
       margin-bottom: 30px;
