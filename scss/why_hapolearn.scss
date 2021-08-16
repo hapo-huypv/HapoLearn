@@ -1,0 +1,27 @@
+.secondbanner {
+  width: 100%;;
+  position: relative;
+
+  .secondbanner-background {
+    width: 100%;
+    height: 740px;
+    background-image: url(../assets/img/rectangle_17.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+
+  .img-laptop {
+    position: absolute;
+    top: -220px;
+  }
+  
+  .img-devices {
+    position: absolute;
+    right: 0px;
+  }
+  
+  .seconbanner-answer {
+
+  }
+}
