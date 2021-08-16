@@ -9,9 +9,9 @@
   img {
     display: block;
     width: 100%;
-    height: 215px;
+    height: 100%;
     padding: 45px 72px;
-    box-shadow: 0px 0px 15px;
+    box-shadow: 0px 2px 2px 0px $color-btn-boxshadow-black inset;
   }
 
   .card-img-top {
@@ -25,18 +25,41 @@
     .card-title {
       color: $color-lightgreen;
       font-size: 30px;
+      font-weight: bold;
+      font-family: $font_UTM_BryantLG;
+      line-height: 37px;
       letter-spacing: -0.05em;
+      overflow: hidden;
+      -webkit-line-clamp: 1;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      border: 0.3px solid $color-yellow;
+      box-shadow: 0px 2px 2px 0px $color-btn-boxshadow-black inset;
     }
   
     .card-text {
       color: $color-dark;
       font-size: 14px;
+      font-weight: bold;
+      font-family: $font_UTM_BryantLG;
+      text-align: center;
+    }
+
+    .card-text-overflow {
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      text-align: center;
     }
 
     .btn-primary {
       background-color: $color-lightgreen;
       color: $color-white;
-      box-shadow: inset 0px 1.5px 2px $color-btn-boxshadow;
+      box-shadow: 0px 1.5px 2px 0px $color-btn-boxshadow-green inset;
+      font-family: $font_UTM_BryantLG;
+      font-size: 18px;
+      font-weight: bold;
       border-radius: 22px;
       border: none;
     }
@@ -68,7 +91,7 @@
 }
 
 .other-course {
-  font-family: UTM BryantLG;
+  font-family: $font_UTM_BryantLG;
   color: $color-black;
   letter-spacing: -0.02em;
   font-weight: bold;
@@ -84,7 +107,7 @@
 }
 
 .extend-course {
-  font-family: UTM BryantLG;
+  font-family: $font_UTM_BryantLG;
   color: $color-green;
   letter-spacing: -0.02em;
   font-weight: bold;
@@ -94,9 +117,18 @@
   -webkit-text-stroke: 2px;
 }
 
-@media (min-width: 575px) {
+@media (max-width: 1140px) and (min-width: 576px) {
   .course {
+    img {
+      padding: 1.3em 2.5em;
+    }
+
     .card-body {
+      .card-title {
+        font-size: 20px;
+        line-height: 24.52px;
+      }
+
       .card-text {
         overflow: hidden;
         text-overflow: ellipsis;
@@ -105,6 +137,40 @@
         display: -webkit-box;
         -webkit-box-orient: vertical;
       }
+
+      .btn-primary {
+        font-size: 10px;
+      }
     }
+  }
+}
+
+@media (max-width: 575px) {
+  .course {
+    padding: 0px 47px;
+
+    img {
+      padding: 34px 55px;
+    }
+
+    .course-border {
+      margin-bottom: 30px;
+    }
+
+    .card-body {
+      .card-title {
+        font-size: 25px;
+      }
+    }
+  }
+
+  .other-course {
+    font-size: 40px;
+    line-height: 49.04px;
+  }
+
+  .extend-course {
+    font-size: 22px;
+    line-height: 26.97px;
   }
 }
