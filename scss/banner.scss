@@ -1,7 +1,6 @@
 .hapo-learn-banner {
   width: 100%;
   height: 655px;
-  overflow: visible;
 }
 
 .banner-background {
@@ -15,6 +14,7 @@
 .bg-linear {
   background-image: linear-gradient(to bottom, $color-white, $color-gray);
   height: 130px;
+  overflow: visible;
 }
 
 .custom-firstbanner {

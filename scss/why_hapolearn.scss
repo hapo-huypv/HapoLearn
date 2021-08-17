@@ -1,6 +1,7 @@
 .secondbanner {
-  width: 100%;;
+  width: 100%;
   position: relative;
+  margin-top: 9.5vw;
 
   .secondbanner-background {
     width: 100%;
@@ -13,15 +14,100 @@
 
   .img-laptop {
     position: absolute;
-    top: -220px;
+    top: -30%;
+  }
+  
+  .img-devices-custom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   
   .img-devices {
-    position: absolute;
-    right: 0px;
+    align-items: flex-end !important;
+    width: 100%;
   }
   
-  .seconbanner-answer {
+  .secondbanner-answer {
+    color: $color-white;
+    font-family: $font_UTM_BryantLG;
+    letter-spacing: -0.05em;
+    font-size: 20px;
 
+    .title-why-hapolearn {
+      font-weight: bold;
+      font-size: 70px;
+      line-height: 86px;
+      letter-spacing: -0.02em;
+      margin-left: 9vw;
+      margin-top: 20vw;
+    }
+
+    .reply-why-hapolearn {
+      margin-left: 10vw;
+      font-size: 20px;
+      line-height: 24.52px;
+    }
+  }
+}
+
+@media screen and (max-width: 1140px) and (min-width: 575px) {
+  .secondbanner {
+    .secondbanner-background {
+      height: 395px;
+    }
+
+    .img-devices-custom {
+      align-items: flex-end;
+    }
+
+    .img-laptop {
+      width: 30%;
+    }
+
+    .secondbanner-answer{ 
+      .title-why-hapolearn {
+        font-size: 50px;
+        line-height: 61px;
+        margin-top: -10px;
+        margin-left: 20vw;
+      }
+
+      .reply-why-hapolearn {
+        font-size: 16px;
+        line-height: 20px;
+        margin-left: 33px;
+        margin-top: 65px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .secondbanner {
+    .secondbanner-background {
+      height: auto;
+      display: flex;
+      flex-direction: column;
+
+      .img-laptop {
+        width: 45%;
+        top: -16%;
+      }
+    }
+
+    .secondbanner-answer {
+      .title-why-hapolearn {
+        margin-left: 34vw;
+        font-size: 40px;
+        line-height: 40px;
+        margin-top: 9vw;;
+      }
+
+      .reply-why-hapolearn {
+        font-size: 14px;
+        line-height: 17px;
+      }
+    }
   }
 }
