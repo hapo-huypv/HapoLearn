@@ -99,6 +99,8 @@
   .banner-whyhapolearn {
     .banner-whyhapolearn-background {
       height: 569px;
+      display: flex;
+      flex-direction: column;
 
       .img-laptop {
         width: 45%;
@@ -124,7 +126,9 @@
         font-size: 14px;
         line-height: 17px;
         margin-bottom: 15px;
-        margin: 9px;
+        margin-left: 0px;
+        display: flex;
+        justify-content: center;
       }
     }
   }
