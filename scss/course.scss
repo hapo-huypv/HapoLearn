@@ -143,6 +143,11 @@
       }
     }
   }
+
+  .title-underline {
+    font-size: 40px;
+    line-height: 49.04px;
+  }
 }
 
 @media (max-width: 575px) {
@@ -164,7 +169,7 @@
     }
   }
 
-  .other-course {
+  .title-underline {
     font-size: 40px;
     line-height: 49.04px;
   }
