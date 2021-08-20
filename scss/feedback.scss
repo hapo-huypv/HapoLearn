@@ -52,18 +52,27 @@
     width: 100%;
   }
 
-  .feedback-border-text:before {
-      content: "";
-      position: absolute;
-      width: 20px;
-      height: 20px;
-      bottom: 80px;
-      left: 50px;
-      border: 1px solid $color-border-text;
-      background-color: $color-white;
-      transform: rotate( 45deg);
-      border-top: transparent;
-      border-left: transparent;
+  .feedback-border-text:before,
+  .feedback-border-text:after {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 80px;
+    left: 50px;
+    border: 1px solid $color-border-text;
+    background-color: $color-white;
+    transform: rotate( 45deg);
+    border-top: transparent;
+    border-left: transparent;
+  }
+
+  .feedback-border-text:after {
+    z-index: -1;
+    bottom: 79px;
+    left: 50px;
+
   }
 
   .feedback-text {
