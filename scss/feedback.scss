@@ -106,6 +106,13 @@
     img {
       width: 60px;
     }
+
+    .user-rating {
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: $color-yellow-ratingstar;
+    }
   }
 }
  
@@ -127,39 +134,4 @@
       width: 100%;
     }
   }  
-}
-
-.rating {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-  height: 20px;
-}
-
-.rating >input {
-  display: none;
-}
-
-.rating >label {
-  color: $color-yellow-star;
-  cursor: pointer;
-}
-
-.rating >label::before {
-  content: "\2605";
-  position: absolute;
-  opacity: 0;
-}
-
-.rating >label:hover:before,
-.rating >label:hover~label:before {
-  opacity: 1 !important;
-}
-
-.rating >input:checked~label:before {
-  opacity: 1;
-}
-
-.rating:hover >input:checked~label:before {
-  opacity: 0.4;
 }

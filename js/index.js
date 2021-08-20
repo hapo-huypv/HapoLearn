@@ -1,6 +1,4 @@
-﻿
-
-$('.feedback-slide').slick({
+﻿$('.feedback-slide').slick({
   dots: true,
   infinite: false,
   speed: 300,
@@ -25,8 +23,5 @@ $('.feedback-slide').slick({
         slidesToScroll: 1
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
 });
