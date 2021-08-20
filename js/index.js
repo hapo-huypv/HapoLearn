@@ -1,6 +1,4 @@
-﻿
-
-$('.feedback-slide').slick({
+﻿$('.feedback-slide').slick({
   dots: true,
   infinite: false,
   speed: 300,
