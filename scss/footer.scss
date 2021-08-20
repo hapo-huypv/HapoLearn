@@ -1,5 +1,216 @@
 .footer {
-  height: 308px;
-  background-color: #505353;
-  bottom: 0;  
+  font-family: $font_UTM_BryantLG;
+  color: $color-white;
+  background-color: $color-dark;
+  position: relative;
+
+  &-container {
+    height: 270px;
+    display: flex;
+  }
+
+  &-slogan {
+    margin-left: 65px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  &-text {
+    color: $color-white !important;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: -0.05em;
+  }
+
+  &-nav {
+    padding-top: 68px;
+    padding-bottom: 68px;
+  }
+
+  .me-4 {
+    margin-left: 35px;
+  }
+  
+  &-icon {
+    width: 50px;
+    height: 50px;
+    color: $color-dark;
+    border-radius: 50%;
+    background-color: $color-white;
+    background-position: center center;
+    background-size: contain;
+    position: relative;
+  }
+
+  .fa-facebook-f:before {
+    position: absolute;
+    color: $color-dark;
+    background-size: center;
+    top: 13px;
+    font-size: 25px;
+    right: 16px;
+  }
+
+  .fa-envelope:before {
+    position: absolute;
+    color: $color-dark;
+    background-size: center;
+    top: 13px;
+    font-size: 25px;
+    right: 13px;
+  }
+
+  .fa-phone:before {
+    position: absolute;
+    color: $color-dark;
+    background-size: center;
+    top: 13px;
+    font-size: 25px;
+    right: 13px;
+    transform: rotate(90deg);
+  }
+  
+  &-endground {
+    width: 100%;
+    background-color: $color-black-footer;
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: -0.05em;
+    height: 38px;
+  }
+}
+
+@media screen and (max-width: 900px) and (min-width: 575px) {
+  .footer {
+    img {
+      width: 170px;
+      height: 35px;
+    }
+
+    &-logo {
+      margin-top: 20px;
+      align-items: flex-start !important;
+      justify-content: flex-start !important;
+      padding: 0px;
+    }
+
+    &-slogan {
+      margin-left: 0px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &-text {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    &-icon {
+      width: 40px;
+      height: 40px;
+    }
+
+    .fa-facebook-f:before,
+    .fa-phone:before,
+    .fa-envelope:before {
+      font-size: 20px;
+      top: 10px;
+      left: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .footer {
+    height: 391px;
+
+    &-container {
+      position: relative;
+    }
+
+    &-logo {
+      position: absolute;
+      top: 234px;
+      left: 31px;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    img {
+      width: 150px;
+      height: 31px;
+    }
+
+    &-slogan {
+      font-size: 14px;
+      line-height: 17px;
+      margin-left: 0px;
+      width: 200px;
+    }
+
+    &-text {
+      font-size: 17px;
+      line-height: 21px;
+    }
+
+    .me-4 {
+      margin-left: 10px;
+    }
+
+    &-icon {
+      width: 30px;
+      height: 30px;
+    }
+
+    .fa-facebook-f:before {
+      top: 7px;
+      font-size: 18px;
+      right: 10px;
+    }
+  
+    .fa-envelope:before {
+      top: 7px;
+      font-size: 18px;
+      right: 7px;
+    }
+  
+    .fa-phone:before {
+      top: 7px;
+      font-size: 18px;
+      right: 6px;
+    }
+
+    &-nav {
+      position: absolute;
+      width: 100%;
+    }
+
+    &-contact {
+      position: absolute;
+      top: 240px;
+      right: 27px;
+    }
+
+    &-endground {
+      position: absolute;
+      bottom: 0;
+    }
+    
+    &-nav {
+      position: absolute;
+      top: 25px;
+      left: 41px;
+      padding: 0px;
+      width: 100%;
+
+      &-left {
+        width: 50%;
+      }
+
+      &-right {
+        width: 50%;
+      }
+    }
+  }
 }
