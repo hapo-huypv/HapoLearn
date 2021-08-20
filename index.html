@@ -9,12 +9,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>       
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet"/>    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link href="css/style.css" rel="stylesheet" />
 </head>
 <body>
     <!--Header-->
     <header id="header" class="header">
-        <i class="fas fa-check-circle fa-lg"></i>
         <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top justify-content-center">
             <div class="container-fluid custom-header">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" 
@@ -93,7 +94,7 @@
             </div>
         </div>
         <!-- Other Courses -->
-        <div class=" row other-course justify-content-center">
+        <div class="row title-underline justify-content-center">
             <span class="custom-underline-textcourse">Other courses</span>
         </div>
         <div class="container justify-content-center course">
@@ -136,7 +137,7 @@
                 </div>
             </div>
         </div>
-        <div class=" row extend-course justify-content-center">
+        <div class="row extend-course justify-content-center">
             <span>View All Our Courses <img src="./assets/img/right_arrow.png" alt="arrow"></span>
         </div>
         <!-- Why HapoLearn? -->
@@ -166,15 +167,96 @@
                 <div class="col-6 img-devices"></div>                
             </div>
         </div>
+        <!-- Feedback -->
+        <div class="container feedback">
+            <div class="row title-underline justify-content-center">
+                <span class="custom-underline-textcourse">Feedback</span>
+            </div>
+            <div class="feedback-intro">What other students turned professionals have to say about us after learning with us and reaching their goals</div>
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <div class=" mt-lg-4 mt-md-2 carousel-inner feedback-slide mt-0">
+                    <div class="carousel-item active">
+                        <div class="container mt-5">
+                            <div class="d-flex row ml-auto mr-auto">
+                                <div class="mt-2 m-0 p-0 feedback-border-text ">
+                                    <p class="feedback-text">“A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</p>
+                                </div>
+                                <div class="d-flex flex-row user-info">
+                                    <img class="rounded-circle" src="./assets/img/avatar.png">
+                                    <div class="d-flex flex-column justify-content-start ml-2">
+                                        <span class="d-block font-weight-bold user-name">Hoang Anh Nguyen</span>
+                                        <span class="user-role text-black-50">PHP</span>
+                                        <div class="user-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container mt-5">
+                            <div class="d-flex row ml-auto mr-auto">
+                                <div class="mt-2 m-0 p-0 feedback-border-text ">
+                                    <p class="feedback-text">“A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</p>
+                                </div>
+                                <div class="d-flex flex-row user-info">
+                                    <img class="rounded-circle" src="./assets/img/avatar.png">
+                                    <div class="d-flex flex-column justify-content-start ml-2">
+                                        <span class="d-block font-weight-bold user-name">Bill Gate</span>
+                                        <span class="user-role text-black-50">PHP</span>
+                                        <div class="user-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="container mt-5">
+                            <div class="d-flex row ml-auto mr-auto">
+                                <div class="mt-2 m-0 p-0 feedback-border-text ">
+                                    <p class="feedback-text">“A wonderful course on how to start. Eddie beautifully conveys all essentials of a becoming a good Angular developer. Very glad to have taken this course. Thank you Eddie Bryan.”</p>
+                                </div>
+                                <div class="d-flex flex-row user-info">
+                                    <img class="rounded-circle" src="./assets/img/avatar.png">
+                                    <div class="d-flex flex-column justify-content-start ml-2">
+                                        <span class="d-block font-weight-bold user-name">Huy Pham Van</span>
+                                        <span class="user-role text-black-50">PHP</span>
+                                        <div class="user-rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--Footer-->
-     <footer class="footer">Footer</footer>
+    <footer class="footer">Footer</footer>
 <section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="js/index.js"></script>
 </section>
 </body>
