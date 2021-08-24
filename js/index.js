@@ -25,3 +25,11 @@
     }
   ]
 });
+
+$(".footer-iconandlink").mouseover(function() {
+  $( "#imgContact", this ).removeClass("txt-hidden").addClass( "readmore");
+});
+
+$(".footer-iconandlink").mouseout(function() {
+  $( "#imgContact", this ).removeClass("readmore").addClass("txt-hidden");    
+});
