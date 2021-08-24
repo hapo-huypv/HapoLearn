@@ -26,10 +26,10 @@
   ]
 });
 
-$(".footer-iconandlink") 
-  .mouseover(function() {
+$(".footer-iconandlink").mouseover(function() {
     $( "#imgContact", this ).removeClass("txt-hidden").addClass( "readmore");
-  })
-  .mouseout(function() {
+});
+
+$(".footer-iconandlink").mouseout(function() {
     $( "#imgContact", this ).removeClass("readmore").addClass("txt-hidden");    
-  });
+});
