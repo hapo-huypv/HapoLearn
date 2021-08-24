@@ -34,7 +34,17 @@ $(".footer-iconandlink").mouseout(function() {
   $( "#imgContact", this ).removeClass("readmore").addClass("txt-hidden");    
 });
 
-$('#myTab .login').on('click', function (event) {
-  event.preventDefault()
-  $(this).tab('show')
+
+$(".close-button").click(function() {
+  $( "#messenger", this ).removeClass("chatbox");
 });
+
+$( ".close-button" ).click(function() {
+  $( "#messenger" ).slideUp();
+});
+
+$( ".logo-messenger" ).click(function() {
+  $( "#messenger" ).slideDown("chatbox");
+});
+
+
