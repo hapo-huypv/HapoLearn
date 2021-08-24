@@ -97,6 +97,7 @@
   text-decoration-line: underline;
   text-align: end;
 }
+
 .modal-body {
   button[type="submit"] { 
     margin-left: auto;
@@ -195,22 +196,6 @@
 
 .google-btn { 
   background-color: $color-red-google; 
-}
-
-.form-reset, .form-signup { 
-  display: none; 
-}
-
-.form-signup .social-btn { 
-  width: 100%; 
-}
-
-.form-signup input { 
-  margin-bottom: 2px;
-}
-
-.form-signup .social-login{
-  margin: 0 auto;
 }
 
 @media screen and (max-width:500px){  

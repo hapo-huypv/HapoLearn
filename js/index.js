@@ -33,8 +33,3 @@ $(".footer-iconandlink").mouseover(function() {
 $(".footer-iconandlink").mouseout(function() {
   $( "#imgContact", this ).removeClass("readmore").addClass("txt-hidden");    
 });
-
-$('#myTab .login').on('click', function (event) {
-  event.preventDefault()
-  $(this).tab('show')
-});
