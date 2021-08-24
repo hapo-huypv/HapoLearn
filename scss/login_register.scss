@@ -1,0 +1,228 @@
+.modal.show .modal-dialog {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.modal-header {
+  position: relative;
+
+  .btn-logreg {
+    color: $color-lightgreen;   
+    background-color: $color-white;
+    font-family: $font_UTM_BryantLG;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 31px;
+    letter-spacing: -0.02em;
+    text-align: center;
+  }
+
+  .nav-pills .nav-link.active,
+  .nav-pills .show>.nav-link {
+    color: $color-white;
+    background-color: $color-lightgreen;
+}
+
+  .close {
+    height: 42px;
+    position: absolute;
+    top: -4px;
+    right: -4px;
+    width: 42px;
+    border: 1px solid $color-lightgreen;
+    border-radius: 50%;
+    background-color: $color-lightgreen;
+    opacity: 1;
+
+    .fa-times:before {
+      left: 12px;
+      content: "\f00d";
+      position: absolute;
+      color: white;
+      top: 8px;
+    }
+  }
+
+  .close:hover {
+    opacity: 1.5 !important;
+  }
+}
+
+.modal-content {
+  width: 430px;
+  font-family: $font_UTM_BryantLG;
+}
+
+.social-login {
+  margin: 0 auto;
+  margin-bottom: 14px;
+}
+
+.social-btn {
+  font-weight: 100;
+  color: $color-white;
+  width: 100%;
+  height: 55px;
+  font-size: 0.9rem;
+}
+
+.login-text {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  color: $color-dark;
+}
+
+.form-control-label {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  color: $color-dark;
+}
+
+.form-control-label:before,
+.form-control-label:after {
+  background-color: $color-lightgreen;
+}
+
+.form-text-forgotpass {
+  color: $color-lightgreen !important;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-decoration-line: underline;
+  text-align: end;
+}
+.modal-body {
+  button[type="submit"] { 
+    margin-left: auto;
+    margin-right: auto; 
+  }
+
+  form {
+    width: 100%;
+    max-width: 410px;
+    padding: 15px;
+    margin: auto;
+  }
+
+  .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+    background: $color-gray-background;
+    border: 1px solid $color-border-input;
+    box-sizing: border-box;
+  }
+
+  .form-control:focus { 
+    z-index: 2; 
+  }
+
+  .form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .form-signin input[type="password"] {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+}
+
+.custom-btn-login {
+  width: 200px !important;
+  background: $color-lightgreen;
+  box-shadow: inset 0px 1.5px 2px $color-btn-boxshadow-green;
+  border-radius: 22px;
+  margin-top: 10vh !important;
+  margin-bottom: 5vh;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.custom-btn-login:hover {
+  background-color: $color-lightgreen;
+}
+
+.title-social-login {
+  position: relative;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 25px;
+  letter-spacing: -0.02em;
+  color: $color-dark;
+  background-color: $color-white;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.title-social-login:before {
+  content: "";
+  position: absolute;
+  width: 430px;
+  top: 15px;
+  z-index: -2;
+  border-top: 1px solid $color-gray-line;
+}
+
+.title-social-login::after {
+  content: "";
+  position: absolute;
+  width: 96px;
+  height: 20px;
+  top: 0px;
+  z-index: -1;
+  background-color: $color-white;
+}
+
+.facebook-btn { 
+  background-color: $color-blue-facebook; 
+}
+
+.google-btn { 
+  background-color: $color-red-google; 
+}
+
+.form-reset, .form-signup { 
+  display: none; 
+}
+
+.form-signup .social-btn { 
+  width: 100%; 
+}
+
+.form-signup input { 
+  margin-bottom: 2px;
+}
+
+.form-signup .social-login{
+  margin: 0 auto;
+}
+
+@media screen and (max-width:500px){  
+  .modal-content {
+    width: 80%;
+  }
+
+  .facebook-btn:after{
+    content:'Facebook';
+  }
+
+  .google-btn:after{
+    content:'Google+';
+  }
+}

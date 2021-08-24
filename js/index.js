@@ -26,10 +26,15 @@
   ]
 });
 
-$(".footer-iconandlink") 
-  .mouseover(function() {
-    $( "#imgContact", this ).removeClass("txt-hidden").addClass( "readmore");
-  })
-  .mouseout(function() {
-    $( "#imgContact", this ).removeClass("readmore").addClass("txt-hidden");    
-  });
+$(".footer-iconandlink").mouseover(function() {
+  $( "#imgContact", this ).removeClass("txt-hidden").addClass( "readmore");
+});
+
+$(".footer-iconandlink").mouseout(function() {
+  $( "#imgContact", this ).removeClass("readmore").addClass("txt-hidden");    
+});
+
+$('#myTab .login').on('click', function (event) {
+  event.preventDefault()
+  $(this).tab('show')
+});
