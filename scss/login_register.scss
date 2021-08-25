@@ -97,6 +97,10 @@
   text-align: end;
 }
 
+.form-text-forgotpass:hover {
+  color: $color-lightgreen;
+}
+
 .modal-body {
   .form-login-and-register {
     width: 100%;
@@ -105,13 +109,11 @@
   }
 
   .form-control {
-    box-sizing: border-box;
-    height: auto;
+    height: 60px;
     padding: 10px;
     font-size: 16px;
     background: $color-gray-background;
     border: 1px solid $color-border-input;
-    box-sizing: border-box;
   }
 
   .form-control:focus { 
