@@ -65,6 +65,7 @@
   width: 100%;
   height: 55px;
   font-size: 0.9rem;
+  margin-bottom: 15px;
 }
 
 .login-text {
@@ -73,6 +74,7 @@
   line-height: 25px;
   letter-spacing: -0.02em;
   color: $color-dark;
+  margin-top: 30px;
 }
 
 .form-control-label {
@@ -97,6 +99,7 @@
   text-decoration-line: underline;
   text-align: end;
 }
+
 .modal-body {
   button[type="submit"] { 
     margin-left: auto;
@@ -189,28 +192,22 @@
   background-color: $color-white;
 }
 
+.fa-google-plus-g:before {
+  content: "\f0d5";
+  font-size: 25px;
+}
+
+.fa-facebook-f:before {
+  content: "\f39e";
+  font-size: 25px;
+}
+
 .facebook-btn { 
   background-color: $color-blue-facebook; 
 }
 
 .google-btn { 
   background-color: $color-red-google; 
-}
-
-.form-reset, .form-signup { 
-  display: none; 
-}
-
-.form-signup .social-btn { 
-  width: 100%; 
-}
-
-.form-signup input { 
-  margin-bottom: 2px;
-}
-
-.form-signup .social-login{
-  margin: 0 auto;
 }
 
 @media screen and (max-width:500px){  
