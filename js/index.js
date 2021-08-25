@@ -45,4 +45,3 @@ $( ".close-button" ).click(function() {
 $( ".logo-messenger" ).click(function() {
   $( "#messenger" ).slideDown("chatbox");
 });
-
