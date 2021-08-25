@@ -33,3 +33,15 @@ $(".footer-iconandlink").mouseover(function() {
 $(".footer-iconandlink").mouseout(function() {
   $( "#imgContact", this ).removeClass("readmore").addClass("txt-hidden");    
 });
+
+$(".close-button").click(function() {
+  $( "#messenger", this ).removeClass("chatbox");
+});
+
+$( ".close-button" ).click(function() {
+  $( "#messenger" ).slideUp();
+});
+
+$( ".logo-messenger" ).click(function() {
+  $( "#messenger" ).slideDown("chatbox");
+});
