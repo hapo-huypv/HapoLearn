@@ -366,7 +366,7 @@
   font-weight: bold;
   font-size: 40px;
   line-height: 49.04px;
-  margin-top: 3%;
+  margin-top: 3% !important;
   -webkit-text-stroke: 2px;
 }
 
@@ -422,7 +422,7 @@
 .banner-whyhapolearn {
   width: 100%;
   position: relative;
-  margin-top: 9.5vw;
+  margin-top: 5.5vw;
 }
 .banner-whyhapolearn .banner-whyhapolearn-background {
   width: 100%;
