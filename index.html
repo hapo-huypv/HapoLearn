@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HapoLearn</title>
+    <link rel="shortcut icon" href="./assets/img/hapo_logo.png" type="image/png" />
     <!-- Import Boostrap css, js, font awesome here -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"/>       
     <link href="https://use.fontawesome.com/releases/v5.0.4/css/all.css" rel="stylesheet"/>    
@@ -16,21 +17,20 @@
 <body>
     <!--Header-->
     <header id="header" class="header">
-        <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top justify-content-center">
+        <nav class="navbar navbar-expand-md navbar-light sticky-top justify-content-center">
             <div class="container-fluid custom-header">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" 
-                    data-target="#navbarResponsive">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <a class="navbar-branch" href="#">
                     <img src="./assets/img/hapolearn.png" alt="HapoLearn">        
                 </a>
                 <div class="collapse navbar-collapse align-items-center  justify-content-end" id="navbarResponsive">
-                    <ul class="navbar-nav  align-items-center">
-                        <li class="nav-item"><a class="nav-link" href="#">HOME</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">ALL COURSES</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#loginRegisterModal">LOGIN/REGISTER</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">PROFILE</a></li>
+                    <ul class="navbar-nav align-items-center">
+                        <li class="nav-item"><a class="nav-link header-nav nav-link-active" href="#">HOME</a></li>
+                        <li class="nav-item"><a class="nav-link header-nav" href="#">ALL COURSES</a></li>
+                        <li class="nav-item"><a class="nav-link header-nav" href="#" data-toggle="modal" data-target="#loginRegisterModal">LOGIN/REGISTER</a></li>
+                        <li class="nav-item"><a class="nav-link header-nav" href="#">PROFILE</a></li>
                     </ul>
                 </div>
             </div>
@@ -47,7 +47,7 @@
                         <img src="./assets/img/hapo_logo.png" alt="hapo_logo"> !
                     </div>
                     <div class="sub-title">Interactive lessons, "on-the-go" <br>practice, peer support</div>
-                    <button class="btn btn-primary firstbanner-btn btn-sm" type="submit">Start Learning Now!</button>
+                    <a href="#" class="btn btn-primary firstbanner-btn" type="submit">Start Learning Now!</a>
                 </div>
             </div>
             <div class="bg-linear"></div>
@@ -137,9 +137,9 @@
                 </div>
             </div>
         </div>
-        <div class="row m-0 extend-course justify-content-center">
+        <a href="#" class="row m-0 extend-course justify-content-center">
             <span>View All Our Courses <img src="./assets/img/right_arrow.png" alt="arrow"></span>
-        </div>
+        </a>
         <!-- Why HapoLearn? -->
         <div class="banner-whyhapolearn">
             <div class="banner-whyhapolearn-background d-flex">
@@ -333,60 +333,58 @@
     </div>
     <!-- Footer -->
     <footer class="footer">
-        <section class="">
-            <div class="container">
-                <div class="row mt-3 footer-container ">
-                    <div class="col-4 mb-4 d-flex flex-column justify-content-center footer-logo">
-                        <a class="" href="#">
-                            <img src="./assets/img/hapolearn_white_1.png" alt="HapoLearn">        
-                        </a>
-                        <p class="footer-slogan">
-                            Interactive lessons, "on-the-go" practice, peer support.
-                        </p>
+            <div class="container d-flex justify-content-center footer-container">
+                
+                <div class="col-4 mb-4 d-flex flex-column footer-logo">
+                    <a class="" href="#">
+                        <img src="./assets/img/hapolearn_white_1.png" alt="HapoLearn">        
+                    </a>
+                    <p class="footer-slogan">
+                        Interactive lessons, "on-the-go" practice, peer support.
+                    </p>
+                </div>
+                <div class="d-flex flex-row col-md-4 align-items-center footer-nav">
+                    <div class="d-flex flex-column col-6 footer-nav-left">
+                        <a href="#" class="footer-text">Home</a>
+                        <a href="#" class="footer-text">Features</a>
+                        <a href="#" class="footer-text">Courses</a>
+                        <a href="#" class="footer-text">Blog</a>
                     </div>
-                    <div class="d-flex flex-row col-md-4 footer-nav">
-                        <div class="d-flex flex-column mr-5 ml-3 footer-nav-left">
-                            <a href="#!" class="footer-text">Home</a>
-                            <a href="#!" class="footer-text">Features</a>
-                            <a href="#!" class="footer-text">Courses</a>
-                            <a href="#!" class="footer-text">Blog</a>
-                        </div>
-                        <div class="d-flex flex-column ml-3 footer-nav-right">
-                            <a href="#!" class="footer-text">Contact</a>
-                            <a href="#!" class="footer-text">Terms of Use</a>
-                            <a href="#!" class="footer-text">FAQ</a>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row align-items-center justify-content-center col-4 footer-contact">
-                        <div class="d-inline-flex footer-iconandlink">
-                            <a href="https://www.facebook.com/haposoft.story"  class="footer-icon">
-                                <img class="" src="./assets/img/fb_icon.png" alt="icon-fb">    
-                            </a>
-                            <div id= "imgContact" class="txt-hidden">facebook.com/tuyen.dung.haposoft</div>
-                        </div> 
-                        <div class="d-inline-flex footer-iconandlink">
-                            <a href class="footer-icon">
-                                <img class="" src="./assets/img/phone_icon.png" alt="icon-phone">
-                            </a>
-                            <div id= "imgContact" class="txt-hidden">+84-85-645-9898</div>
-                        </div> 
-                        <div class="d-inline-flex footer-iconandlink">
-                            <a href="" class="footer-icon">
-                                <img class="" src="./assets/img/email_icon.png" alt="icon-email">
-                            </a>
-                            <div id= "imgContact" class="txt-hidden">info@haposoft.com</div>
-                        </div> 
+                    <div class="d-flex flex-column col-6 footer-nav-right">
+                        <a href="#" class="footer-text">Contact</a>
+                        <a href="#" class="footer-text">Terms of Use</a>
+                        <a href="#" class="footer-text">FAQ</a>
                     </div>
                 </div>
+                <div class="d-flex flex-row align-items-center justify-content-center col-4 footer-contact">
+                    <div class="d-inline-flex footer-iconandlink">
+                        <a href="https://www.facebook.com/haposoft.story"  class="footer-icon">
+                            <img class="" src="./assets/img/fb_icon.png" alt="icon-fb">    
+                        </a>
+                        <div id= "imgContact" class="txt-hidden">facebook.com/tuyen.dung.haposoft</div>
+                    </div> 
+                    <div class="d-inline-flex footer-iconandlink">
+                        <a href class="footer-icon">
+                            <img class="" src="./assets/img/phone_icon.png" alt="icon-phone">
+                        </a>
+                        <div id= "imgContact" class="txt-hidden">+84-85-645-9898</div>
+                    </div> 
+                    <div class="d-inline-flex footer-iconandlink">
+                        <a href="" class="footer-icon">
+                            <img class="" src="./assets/img/email_icon.png" alt="icon-email">
+                        </a>
+                        <div id= "imgContact" class="txt-hidden">info@haposoft.com</div>
+                    </div> 
+                </div>
             </div>
-        </section>
-        <div class="d-flex justify-content-center align-items-center m-auto footer-endground">
-            © 2020 HapoLearn, Inc. All rights reserved.
-        </div>
+               <div class="d-flex justify-content-center align-items-center m-auto footer-endground">
+                    © 2020 HapoLearn, Inc. All rights reserved.
+                </div>
+       
     </footer>
     <!-- messenger -->
-    <div class="messenger">
-        <div id="messenger" class="chatbox chatbox-appear">
+    <!-- <div class="messenger">
+        <div id="messenger" class="chatbox">
             <div class="close-button"><i class="fas fa-times"></i></div>
             <div class="title-chatbox">HapoLearn</div>
             <div class="message-from-hapolearn">
@@ -400,7 +398,7 @@
             <div class="text-messenger-end">Chat với HapoLearn trong Messenger</div>
         </div>
         <img class="logo-messenger" alt="logo-messenger" src="./assets/img/messenger.png"></img>
-    </div>
+    </div> -->
 <section>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
     </script>

@@ -140,6 +140,7 @@
 }
 
 .title-social-login {
+  position: relative;
   font-weight: bold;
   font-size: 20px;
   line-height: 25px;
@@ -191,13 +192,5 @@
 @media screen and (max-width:500px){  
   .modal-content {
     width: 80%;
-  }
-
-  .facebook-btn:after{
-    content:'Facebook';
-  }
-
-  .google-btn:after{
-    content:'Google+';
   }
 }

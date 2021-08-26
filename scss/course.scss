@@ -33,8 +33,6 @@
       -webkit-line-clamp: 1;
       display: -webkit-box;
       -webkit-box-orient: vertical;
-      border: 0.3px solid $color-yellow;
-      box-shadow: 0px 2px 2px 0px $color-btn-boxshadow-black inset;
     }
   
     .card-text {
@@ -108,7 +106,7 @@
 
 .extend-course {
   font-family: $font_UTM_BryantLG;
-  color: $color-green;
+  color: $color-green !important;
   letter-spacing: -0.02em;
   font-weight: bold;
   font-size: 40px;
@@ -117,7 +115,11 @@
   -webkit-text-stroke: 2px;
 }
 
-@media (max-width: 1140px) and (min-width: 576px) {
+.extend-course:hover {
+  text-decoration: none;
+}
+
+@media (max-width: 1200px) and (min-width: 576px) {
   .course {
     .card-img-top {
       height: 131px;
@@ -177,5 +179,17 @@
   .extend-course {
     font-size: 22px;
     line-height: 26.97px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .course {
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .course {
+    max-width: 700px;
   }
 }

@@ -43,5 +43,11 @@ $( ".close-button" ).click(function() {
 });
 
 $( ".logo-messenger" ).click(function() {
-  $( "#messenger" ).slideDown("chatbox");
+  $( "#messenger" ).slideDown();
 });
+
+$( ".header-nav" ).click(function() {
+  $ (".header-nav").removeClass("nav-link-active");
+  $(  this ).addClass("nav-link-active");
+});
+

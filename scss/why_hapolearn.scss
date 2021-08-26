@@ -60,6 +60,20 @@
   }
 }
 
+@media screen and (max-width: 1920px) and (min-width: 1440px) {
+  .banner-whyhapolearn 
+    .banner-whyhapolearn-answer { 
+      .title-why-hapolearn {
+        font-size: 80px;
+        margin-bottom: 40px;
+      }
+
+      .reply-why-hapolearn {
+        font-size: 30px;
+      }
+    }
+}
+
 @media screen and (max-width: 1140px) and (min-width: 575px) {
   .banner-whyhapolearn {
     .banner-whyhapolearn-background {

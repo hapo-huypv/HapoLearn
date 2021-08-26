@@ -2,11 +2,11 @@
   font-family: $font_UTM_BryantLG;
   color: $color-white;
   background-color: $color-dark;
-  position: relative;
 
   &-container {
     height: 270px;
     display: flex;
+    padding-top: 30px
   }
 
   &-slogan {
@@ -21,7 +21,7 @@
     font-size: 20px;
     line-height: 25px;
     letter-spacing: -0.05em;
-    margin-top: 5px;
+    margin-bottom: 20px;
   }
 
   &-nav {
@@ -72,7 +72,7 @@
   }
 }
 
-@media screen and (max-width: 900px) and (min-width: 575px) {
+@media screen and (max-width: 984px) and (min-width: 575px) {
   .footer {
     &-logo {
       margin-top: 20px;
@@ -108,8 +108,8 @@
 
 @media screen and (max-width: 575px) {
   .footer {
-    height: 391px;
-
+    // height: 391px;
+    flex-direction: column;
     .readmore {
       display: none;
     }
@@ -119,12 +119,12 @@
     }
 
     &-logo {
-      position: absolute;
-      top: 234px;
-      left: 31px;
-      padding: 0px;
-      margin: 0px;
-
+      // position: absolute;
+      // top: 234px;
+      // left: 31px;
+      // padding: 0px;
+      // margin: 0px;
+      order: 2;
       img {
         width: 150px;
         height: 31px;
@@ -152,28 +152,26 @@
       }
     }
 
-    &-nav {
-      position: absolute;
-      width: 100%;
-    }
-
     &-contact {
-      position: absolute;
-      top: 240px;
-      right: 27px;
+      // position: absolute;
+      // top: 240px;
+      // right: 27px;
+      order: 3;
     }
 
     &-endground {
-      position: absolute;
-      bottom: 0;
+      // position: absolute;
+      // bottom: 0;
+      order: 4;
     }
     
     &-nav {
-      position: absolute;
-      top: 25px;
-      left: 41px;
-      padding: 0px;
-      width: 100%;
+      order: 1;
+      // position: absolute;
+      // top: 25px;
+      // left: 41px;
+      // padding: 0px;
+      // width: 100%;
 
       &-left {
         width: 50%;
