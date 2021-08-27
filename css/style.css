@@ -63,8 +63,13 @@ button:focus {
   background-color: #B2D235;
   color: #FEFFFF !important;
 }
+.header .navbar-toggler {
+  border: none;
+}
 .header .navbar-toggler-icon {
   cursor: pointer;
+  outline: none;
+  border: none;
 }
 .header .navbar-close {
   border: 10px solid transparent;
@@ -86,6 +91,15 @@ button:focus {
   .header .navbar-branch img {
     width: 300px;
     height: 61.74px;
+  }
+}
+@media (max-width: 768px) and (min-width: 575px) {
+  .header .custom-header {
+    justify-content: center;
+  }
+  .header .navbar-nav .nav-link {
+    padding-right: 20px;
+    padding-left: 20px;
   }
 }
 @media (max-width: 575px) {
@@ -139,10 +153,6 @@ button:focus {
     height: 1000%;
   }
 }
-.hidden {
-  display: none;
-}
-
 .hapo-learn-banner {
   width: 100%;
   height: 655px;
