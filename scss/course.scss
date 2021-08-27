@@ -60,6 +60,8 @@
       font-weight: bold;
       border-radius: 22px;
       border: none;
+      padding-left: 2vw;
+      padding-right: 2vw;
     }
   }
 
@@ -113,10 +115,6 @@
   line-height: 49.04px;
   margin-top: 3% !important;
   -webkit-text-stroke: 2px;
-}
-
-.extend-course:hover {
-  text-decoration: none;
 }
 
 @media (max-width: 1200px) and (min-width: 576px) {

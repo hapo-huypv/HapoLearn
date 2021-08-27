@@ -41,7 +41,7 @@
     }
   }
 
-  .close:hover {
+  .close:not(:disabled):hover  {
     opacity: 1;
   }
 }
@@ -80,6 +80,7 @@
   line-height: 22px;
   letter-spacing: -0.02em;
   color: $color-dark;
+  cursor: pointer;
 }
 
 .custom-checkbox
@@ -127,8 +128,8 @@
   background: $color-lightgreen;
   box-shadow: inset 0px 1.5px 2px $color-btn-boxshadow-green;
   border-radius: 22px;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
+  margin-top: 45px;
+  margin-bottom: 15px;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;

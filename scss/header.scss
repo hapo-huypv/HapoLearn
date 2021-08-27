@@ -3,7 +3,7 @@
   background-color: $color-white;
 
   .navbar {
-    height: 150px;
+    height: 100px;
     padding: 0px;
 
     .custom-header {
@@ -30,6 +30,7 @@
     font-size: 14px;
     line-height: 19.07px;
     border-radius: 17px;
+    padding: 8px 15px !important;
   }
 
   .nav-link:hover {
@@ -109,7 +110,7 @@
     }
 
     .nav-link {
-      margin-bottom: 20px;
+      margin-top: 20px;
     }
 
     .nav-link:focus {

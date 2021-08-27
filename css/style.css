@@ -30,12 +30,21 @@ button:focus {
   outline: 0;
 }
 
+.btn-primary:focus,
+.btn-primary:hover {
+  text-decoration: underline;
+}
+
+.btn-primary:active {
+  background-color: aqua !important;
+}
+
 .header {
   border-bottom: 5px solid #e5e5e5;
   background-color: #FFFFFF;
 }
 .header .navbar {
-  height: 150px;
+  height: 100px;
   padding: 0px;
 }
 .header .navbar .custom-header {
@@ -54,6 +63,7 @@ button:focus {
   font-size: 14px;
   line-height: 19.07px;
   border-radius: 17px;
+  padding: 8px 15px !important;
 }
 .header .nav-link:hover {
   background-color: #B2D235;
@@ -115,7 +125,7 @@ button:focus {
     justify-content: flex-start;
   }
   .header .nav-link {
-    margin-bottom: 20px;
+    margin-top: 20px;
   }
   .header .nav-link:focus {
     background-color: #FFFFFF;
@@ -374,6 +384,8 @@ button:focus {
   font-weight: bold;
   border-radius: 22px;
   border: none;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 .course .bg-color-php {
   background-color: #3F6185;
@@ -418,10 +430,6 @@ button:focus {
   line-height: 49.04px;
   margin-top: 3% !important;
   -webkit-text-stroke: 2px;
-}
-
-.extend-course:hover {
-  text-decoration: none;
 }
 
 @media (max-width: 1200px) and (min-width: 576px) {
@@ -539,7 +547,7 @@ button:focus {
   -webkit-box-orient: vertical;
 }
 
-@media screen and (max-width: 1920px) and (min-width: 1440px) {
+@media screen and (max-width: 1920px) and (min-width: 1600px) {
   .banner-whyhapolearn .banner-whyhapolearn-answer .title-why-hapolearn {
     font-size: 80px;
     margin-bottom: 40px;
@@ -548,7 +556,7 @@ button:focus {
     font-size: 30px;
   }
 }
-@media screen and (max-width: 1140px) and (min-width: 575px) {
+@media screen and (max-width: 1146px) and (min-width: 668px) {
   .banner-whyhapolearn .banner-whyhapolearn-background {
     height: 395px;
   }
@@ -556,8 +564,34 @@ button:focus {
     background-position: bottom;
   }
   .banner-whyhapolearn .img-laptop {
-    width: 35%;
-    top: -36%;
+    width: 26%;
+    top: -13vw;
+  }
+  .banner-whyhapolearn .banner-whyhapolearn-answer .title-why-hapolearn {
+    font-size: 50px;
+    line-height: 61px;
+    margin-top: 37px;
+    margin-left: 218px;
+    width: 120%;
+    margin-bottom: 70px;
+  }
+  .banner-whyhapolearn .banner-whyhapolearn-answer .reply-why-hapolearn {
+    font-size: 16px;
+    line-height: 20px;
+    margin-left: 18px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 668px) and (min-width: 575px) {
+  .banner-whyhapolearn .banner-whyhapolearn-background {
+    height: 395px;
+  }
+  .banner-whyhapolearn .img-devices {
+    background-position: bottom;
+  }
+  .banner-whyhapolearn .img-laptop {
+    width: 40%;
+    top: -20vw;
   }
   .banner-whyhapolearn .banner-whyhapolearn-answer .title-why-hapolearn {
     font-size: 50px;
@@ -581,7 +615,7 @@ button:focus {
     flex-direction: column;
   }
   .banner-whyhapolearn .banner-whyhapolearn-background .img-laptop {
-    width: 45%;
+    width: 37%;
     top: -16%;
   }
   .banner-whyhapolearn .banner-whyhapolearn-background .img-devices {
@@ -604,6 +638,9 @@ button:focus {
     display: flex;
     justify-content: center;
   }
+}
+.feedback {
+  margin-bottom: 8vw;
 }
 .feedback .feedback-intro {
   width: 705px;
@@ -659,7 +696,7 @@ button:focus {
   position: absolute;
   width: 20px;
   height: 20px;
-  bottom: 80px;
+  bottom: 76px;
   left: 50px;
   border: 1px solid #E2E2E2;
   background-color: #FFFFFF;
@@ -669,11 +706,12 @@ button:focus {
 }
 .feedback .feedback-border-text:after {
   z-index: -1;
-  bottom: 79px;
+  bottom: 75px;
   left: 50px;
 }
 .feedback .feedback-text {
   text-align: start;
+  font-family: "UTM-BryantLG";
   font-size: 16px;
   line-height: 20px;
   letter-spacing: -0.05em;
@@ -726,6 +764,7 @@ button:focus {
   height: 500px;
   background-image: url(../assets/img/become_a_member.png);
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   font-family: "UTM-BryantLG";
 }
@@ -849,8 +888,8 @@ button:focus {
   margin-bottom: 20px;
 }
 .footer-nav {
-  padding-top: 68px;
-  padding-bottom: 68px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .footer-iconandlink {
   vertical-align: middle;
@@ -915,6 +954,15 @@ button:focus {
     height: 40px;
   }
 }
+@media screen and (max-width: 768px) and (min-width: 575px) {
+  .footer-container {
+    max-width: 740px;
+  }
+
+  .footer-nav {
+    padding: 0px;
+  }
+}
 @media screen and (max-width: 575px) {
   .footer {
     height: 391px;
@@ -968,7 +1016,7 @@ button:focus {
     position: absolute;
     top: 25px;
     padding: 0px;
-    width: 100%;
+    max-width: 100%;
   }
   .footer-nav-left {
     width: 50%;
@@ -977,6 +1025,20 @@ button:focus {
   .footer-nav-right {
     width: 50%;
     align-self: start;
+  }
+}
+@media (min-width: 1550px) {
+  .footer-container {
+    max-width: 1720px;
+  }
+
+  .footer-nav-left {
+    max-width: 36%;
+  }
+}
+@media (min-width: 1200px) {
+  .footer-container {
+    max-width: 1255px;
   }
 }
 .modal.show .modal-dialog {
@@ -1017,7 +1079,7 @@ button:focus {
   color: white;
   top: 8px;
 }
-.modal-header .close:hover {
+.modal-header .close:not(:disabled):hover {
   opacity: 1;
 }
 
@@ -1055,6 +1117,7 @@ button:focus {
   line-height: 22px;
   letter-spacing: -0.02em;
   color: #505353;
+  cursor: pointer;
 }
 
 .custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
@@ -1097,8 +1160,8 @@ button:focus {
   background: #B2D235;
   box-shadow: inset 0px 1.5px 2px #6F8710;
   border-radius: 22px;
-  margin-top: 10vh;
-  margin-bottom: 5vh;
+  margin-top: 45px;
+  margin-bottom: 15px;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;

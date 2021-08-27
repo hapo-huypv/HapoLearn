@@ -1,4 +1,6 @@
 .feedback {
+  margin-bottom: 8vw;
+
   .feedback-intro {
     width: 705px;
     font-family: $font_UTM_BryantLG;
@@ -59,7 +61,7 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    bottom: 80px;
+    bottom: 76px;
     left: 50px;
     border: 1px solid $color-border-text;
     background-color: $color-white;
@@ -70,13 +72,14 @@
 
   .feedback-border-text:after {
     z-index: -1;
-    bottom: 79px;
+    bottom: 75px;
     left: 50px;
 
   }
 
   .feedback-text {
     text-align: start;
+    font-family: $font_UTM_BryantLG;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.05em;
