@@ -82,10 +82,11 @@
   color: $color-dark;
 }
 
-.form-control-label:before,
-.form-control-label:after {
-  background-color: $color-lightgreen;
-}
+.custom-checkbox
+ .custom-control-input:checked~
+  .custom-control-label::before {
+    background-color: $color-lightgreen;
+  }
 
 .form-text-forgotpass {
   color: $color-lightgreen;
@@ -155,7 +156,7 @@
 .title-social-login:before {
   content: "";
   position: absolute;
-  width: 430px;
+  width: calc(100% + 60px);
   top: 15px;
   z-index: -2;
   border-top: 1px solid $color-gray-line;

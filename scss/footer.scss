@@ -108,8 +108,9 @@
 
 @media screen and (max-width: 575px) {
   .footer {
-    // height: 391px;
-    flex-direction: column;
+    height: 391px;
+    position: relative;
+
     .readmore {
       display: none;
     }
@@ -119,12 +120,12 @@
     }
 
     &-logo {
-      // position: absolute;
-      // top: 234px;
-      // left: 31px;
-      // padding: 0px;
-      // margin: 0px;
-      order: 2;
+      position: absolute;
+      top: 234px;
+      left: 31px;
+      padding: 0px;
+      margin: 0px;
+      
       img {
         width: 150px;
         height: 31px;
@@ -141,6 +142,7 @@
     &-text {
       font-size: 17px;
       line-height: 21px;
+      padding-left: 35px;
     }
 
     &-icon {
@@ -153,32 +155,30 @@
     }
 
     &-contact {
-      // position: absolute;
-      // top: 240px;
-      // right: 27px;
-      order: 3;
+      position: absolute;
+      top: 240px;
+      right: 27px;
     }
 
     &-endground {
-      // position: absolute;
-      // bottom: 0;
-      order: 4;
+      position: absolute;
+      bottom: 0;
     }
     
     &-nav {
-      order: 1;
-      // position: absolute;
-      // top: 25px;
-      // left: 41px;
-      // padding: 0px;
-      // width: 100%;
+      position: absolute;
+      top: 25px;
+      padding: 0px;
+      width: 100%;
 
       &-left {
         width: 50%;
+        align-self: start;
       }
 
       &-right {
         width: 50%;
+        align-self: start;
       }
     }
   }

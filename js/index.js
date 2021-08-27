@@ -51,3 +51,16 @@ $( ".header-nav" ).click(function() {
   $(  this ).addClass("nav-link-active");
 });
 
+var c = 0;
+$( ".navbar-toggler" ).click(function() { 
+  if (c == 0) {
+    $(  ".navbar-toggler-icon" ).removeClass("navbar-toggler-icon").addClass("navbar-close");
+    c = 1;
+    $( ".header" ).addClass("header-mobile");
+  } 
+  else {
+    $( ".navbar-close" ).removeClass("navbar-close").addClass("navbar-toggler-icon");
+    c = 0;
+    $( ".header" ).removeClass("header-mobile");
+  }
+});

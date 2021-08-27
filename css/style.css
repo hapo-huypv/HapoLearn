@@ -66,6 +66,13 @@ button:focus {
 .header .navbar-toggler-icon {
   cursor: pointer;
 }
+.header .navbar-close {
+  border: 10px solid transparent;
+  background-color: white;
+  background-image: url(../assets/img/x-lg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 @media (max-width: 1140px) and (min-width: 768px) {
   .header .navbar .custom-header {
@@ -93,6 +100,17 @@ button:focus {
     margin-right: 39px;
     justify-content: flex-start;
   }
+  .header .nav-link {
+    margin-bottom: 20px;
+  }
+  .header .nav-link:focus {
+    background-color: #FFFFFF;
+    color: #B2D235 !important;
+  }
+  .header .nav-link-active {
+    background-color: #FFFFFF;
+    color: #B2D235 !important;
+  }
   .header .navbar-toggler {
     border: none;
     padding: 0px;
@@ -111,7 +129,20 @@ button:focus {
     width: 150px;
     height: 26.75px;
   }
+
+  .header-mobile {
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1000%;
+  }
 }
+.hidden {
+  display: none;
+}
+
 .hapo-learn-banner {
   width: 100%;
   height: 655px;
@@ -550,7 +581,7 @@ button:focus {
     max-width: 100%;
   }
   .banner-whyhapolearn .banner-whyhapolearn-answer .title-why-hapolearn {
-    margin-left: 34vw;
+    margin-left: 26vw;
     font-size: 40px;
     line-height: 40px;
     margin-top: 40px;
@@ -876,7 +907,8 @@ button:focus {
 }
 @media screen and (max-width: 575px) {
   .footer {
-    flex-direction: column;
+    height: 391px;
+    position: relative;
   }
   .footer .readmore {
     display: none;
@@ -885,7 +917,11 @@ button:focus {
     position: relative;
   }
   .footer-logo {
-    order: 2;
+    position: absolute;
+    top: 234px;
+    left: 31px;
+    padding: 0px;
+    margin: 0px;
   }
   .footer-logo img {
     width: 150px;
@@ -900,6 +936,7 @@ button:focus {
   .footer-text {
     font-size: 17px;
     line-height: 21px;
+    padding-left: 35px;
   }
   .footer-icon {
     margin-left: 10px;
@@ -909,19 +946,27 @@ button:focus {
     height: 30px;
   }
   .footer-contact {
-    order: 3;
+    position: absolute;
+    top: 240px;
+    right: 27px;
   }
   .footer-endground {
-    order: 4;
+    position: absolute;
+    bottom: 0;
   }
   .footer-nav {
-    order: 1;
+    position: absolute;
+    top: 25px;
+    padding: 0px;
+    width: 100%;
   }
   .footer-nav-left {
     width: 50%;
+    align-self: start;
   }
   .footer-nav-right {
     width: 50%;
+    align-self: start;
   }
 }
 .modal.show .modal-dialog {
@@ -1002,8 +1047,7 @@ button:focus {
   color: #505353;
 }
 
-.form-control-label:before,
-.form-control-label:after {
+.custom-checkbox .custom-control-input:checked ~ .custom-control-label::before {
   background-color: #B2D235;
 }
 
@@ -1072,7 +1116,7 @@ button:focus {
 .title-social-login:before {
   content: "";
   position: absolute;
-  width: 430px;
+  width: calc(100% + 60px);
   top: 15px;
   z-index: -2;
   border-top: 1px solid #DBDBDB;
@@ -1113,8 +1157,8 @@ button:focus {
 }
 .messenger {
   position: fixed;
-  right: 33px;
-  bottom: 92px;
+  right: 2.78%;
+  bottom: 10%;
 }
 .messenger .chatbox {
   background-color: #FFFFFF;
@@ -1210,12 +1254,37 @@ button:focus {
   cursor: pointer;
 }
 
+@media screen and (max-width: 768px) and (min-width: 500px) and (height: 1024px) {
+  .messenger {
+    right: 2.78%;
+    bottom: 45vh;
+  }
+}
 @media screen and (max-width: 500px) {
+  .messenger {
+    right: 5.78%;
+    bottom: 30vh;
+  }
   .messenger .chatbox {
     width: 300px;
   }
   .messenger .logo-messenger {
     width: 37.5px;
     height: 37.5px;
+  }
+}
+@media screen and (max-width: 500px) and (height: 812px) {
+  .messenger {
+    bottom: 30vh;
+  }
+}
+@media screen and (max-width: 500px) and (height: 736px) {
+  .messenger {
+    bottom: 23vh;
+  }
+}
+@media screen and (max-width: 500px) and (max-height: 736px) {
+  .messenger {
+    bottom: 15vh;
   }
 }/*# sourceMappingURL=style.css.map */
