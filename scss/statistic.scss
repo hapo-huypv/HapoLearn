@@ -21,6 +21,12 @@
   }
 }
 
+@media (min-width: 1200px) {
+  .statistic {
+      max-width: 1920px;
+  }
+}
+
 @media screen and (max-width: 1140px) {
   .statistic {
     &-parameter-title {
