@@ -127,6 +127,10 @@ button:focus {
   .header .nav-link {
     margin-top: 20px;
   }
+  .header .nav-link:hover {
+    background-color: #FFFFFF;
+    color: #B2D235 !important;
+  }
   .header .nav-link:focus {
     background-color: #FFFFFF;
     color: #B2D235 !important;
@@ -919,6 +923,7 @@ button:focus {
   margin-left: 5px;
   position: relative;
   align-items: center;
+  white-space: nowrap;
 }
 .footer-endground {
   width: 100%;

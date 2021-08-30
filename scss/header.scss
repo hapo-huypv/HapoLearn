@@ -113,6 +113,11 @@
       margin-top: 20px;
     }
 
+    .nav-link:hover {
+      background-color: $color-white;
+      color: $color-lightgreen !important;
+    }
+
     .nav-link:focus {
       background-color: $color-white;
       color: $color-lightgreen !important;
